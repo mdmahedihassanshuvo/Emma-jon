@@ -13,7 +13,7 @@ const Products = () => {
             .then(data => setProducts(data))
     }, [])
 
-    const addToCart = (product) =>{
+    const addToCart = (product) => {
         console.log(product)
         const newCart = [...cart, product]
         setCart(newCart)
@@ -23,14 +23,14 @@ const Products = () => {
         <div className='shop-container'>
             <div className='Products-container'>
                 {
-                    products.map(product => <Product 
-                        product={product} 
-                        key={product.id} 
+                    products.map(product => <Product
+                        product={product}
+                        key={product.id}
                         addToCart={addToCart}>
-                        </Product>)
+                    </Product>)
                 }
             </div>
-            <div className='order-summary'>
+            <div className='order-summary h-96'>
                 <h2>Order Summary</h2>
                 <p>Selected item: {cart.length}</p>
             </div>
