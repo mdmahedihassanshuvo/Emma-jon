@@ -1,0 +1,12 @@
+.cart {
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 10px;
+    /* position: sticky;
+    top: 0; */
+}
+
+.cart p {
+    font-weight: 400;
+    font-size: 17px;
+    color: #2A414F;
+}

@@ -13,17 +13,3 @@
     grid-gap: 20px;
 }
 
-.order-summary {
-    background: rgba(255, 153, 0, 0.3);
-    border-radius: 10px;
-}
-
-.order-summary h2{
-    
-}
-
-.order-summary p {
-    font-weight: 400;
-    font-size: 17px;
-    color: #2A414F;
-}
