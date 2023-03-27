@@ -14,9 +14,12 @@
 }
 
 .order-summary {
-    text-align: center;
     background: rgba(255, 153, 0, 0.3);
     border-radius: 10px;
+}
+
+.order-summary h2{
+    
 }
 
 .order-summary p {
