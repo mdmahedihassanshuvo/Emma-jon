@@ -14,7 +14,7 @@ const Products = () => {
     }, [])
 
     const addToCart = (product) => {
-        console.log(product)
+        // console.log(product)
         const newCart = [...cart, product]
         setCart(newCart)
     }
@@ -31,7 +31,7 @@ const Products = () => {
                 }
             </div>
             <div className='order-summary h-96'>
-                <h2>Order Summary</h2>
+                <h2 className='text-2xl mb-2 mt-2 underline text-indigo-700  font-semibold'>Order Summary</h2>
                 <p>Selected item: {cart.length}</p>
             </div>
         </div>
