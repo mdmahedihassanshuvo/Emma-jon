@@ -15,15 +15,18 @@ const Products = () => {
             .then(data => setProducts(data))
     }, [])
 
-    useEffect(() =>{
+    useEffect(() => {
+        const savedCart = []
         const storedCart = getShoppingCart()
-        for(const id in storedCart){
+        for (const id in storedCart) {
             const addedProduct = products.find(product => product.id === id)
-            const quantity = storedCart[id]
-            // console.log(quantity)
-            addedProduct.quantity = quantity;
-            console.log(addedProduct.quantity)   
+            if (addedProduct) {
+                const quantity = storedCart[id]
+                addedProduct.quantity = quantity;
+                savedCart.push(addedProduct)
+            }
         }
+        setCart(savedCart)
     }, [products])
 
     const addToCart = (product) => {
